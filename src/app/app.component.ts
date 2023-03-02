@@ -6,5 +6,30 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  
   title = 'data-binding-app';
+
+  count:number = 0;
+  
+  hidden:boolean = true;
+  myVar:string = "";
+  
+
+  onClick(){
+    this.count++;
+  }
+
+  onDoubleClick(){
+   
+    if(this.hidden === false )
+
+    this.hidden=true;
+
+    else 
+    this.hidden = false;
+    
+  }
+
 }
+
+
